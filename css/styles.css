@@ -1,3 +1,49 @@
+/*палитра цветов*/
+:root {
+  --primary-text-color: #757575;
+  --primary-white: #ffffff;
+  --footer-info-text: rgba(255, 255, 255, 0.6);
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+}
+body {
+  background-color: var(--primary-white);
+  color: var(--primary-text-color);
+}
+footer {
+  background-color: #2f303a;
+  color: var(--primary-white);
+}
+
+.nav.logo {
+  color: #000000;
+}
+footer .logo {
+  color: var(--primary-white);
+}
+.accent {
+  color: var(--accent-color);
+}
+.navig.link {
+  color: var(--title-text-color);
+}
+.navig-list .current {
+  color: var(--accent-color);
+}
+
+address .info {
+  color: var(--footer-info-text);
+}
+address .telephone,
+address .mail {
+  color: var(--primary-text-color);
+}
+address .telephone:hover,
+address .mail:hover,
+address .telephone:focus,
+address .mail:focus {
+  color: var(--accent-color);
+}
 .navig-list,
 .preference-list,
 .services-list,
@@ -6,7 +52,38 @@
 .social-list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
+.hero-title {
+  color: var(--primary-white);
+  background-color: rgba(47, 48, 58, 0.8);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
 
-.accent {
-  color: #2196f3;
+.btn {
+  color: var(--primary-white);
+  background-color: var(--accent-color);
+}
+.preference-title {
+  color: var(--title-text-color);
+}
+.services-title,
+.team-title,
+.client-title {
+  color: var(--title-text-color);
+}
+.services-text {
+  color: var(--primary-white);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.team-name {
+  color: var(--title-text-color);
 }
